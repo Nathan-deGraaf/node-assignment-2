@@ -45,7 +45,7 @@ header {
   padding: 5em 0;
   height: 95vh;
   
-  background-image: url(jazzy.jpg);
+  background-image: url("../pics/jazzy.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
