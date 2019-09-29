@@ -1,5 +1,5 @@
 
-/* Header */
+/************************************ Header **********************************/
 
 header {
   height: 50vh;
@@ -30,7 +30,7 @@ h1 {
   grid-row: 2 / 3;
 }
 
-/* Nav */
+/******************************************* Nav ******************************/
 
 nav {
   width: 100%;
@@ -73,12 +73,18 @@ nav a:hover {
   border-radius: 0;
 }
 
-/* main */
+body {
+  background-color: #c6e0f3;
+}
+
+/****************************************** main ******************************/
 
 h2 {
   text-align: center;
   margin: 0;
   padding: 1em;
+
+  font-size: 2em;
 }
 
 main > .flex {
@@ -105,7 +111,7 @@ img {
   display: grid;
   grid-template: .5fr .1fr 1fr/1fr;
 
-  background-color: #ff550085;
+  background-color: #81b4da;
   border: 2px solid #1e1e1f;
   border-radius: 25px;
   box-shadow: 6px 4px hsla(0deg, 0%, 0%, 0.15);
@@ -150,7 +156,7 @@ justify-content: center;
   max-width: 25ch
 }
 
-/* contact form */
+/************************************** contact form **************************/
 
 section.centered {
   display: grid;
@@ -224,13 +230,112 @@ input {
   content: ':';
 }
 
+/*********************************** about main *******************************/
+
+.about > section {
+  margin: 1em;
+
+  background-color: #81b4da;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 6px 4px hsla(0deg, 0%, 0%, 0.15);
+}
+
+.about {
+  display: grid;
+  grid-template: .5fr 1fr 1fr / .1fr .7fr 1fr .3fr .1fr;
+}
+
+#abt1, #abt2, #abt3 {
+  padding: 1em;
+  max-width: 85ch;
+  
+  grid-column: span 3;
+}
+
+#abt1, #abt3 {
+  grid-column: 2 / 5;
+}
+
+#abt2 {
+  grid-column: 3 / 5;
+}
+
+.about h3 {
+  font-size: 2em;
+}
+
+.floatpic1 {
+  width: 20vmin;
+  margin: 1em;  
+  
+  border-radius: 50%;
+  background-position: center;
+
+  float: left;
+  shape-outside: circle(50%);
+
+  box-shadow: 1px 2px hsla(0, 0%, 0%, 0.3);
+}
+
+.floatpic2 {
+  width: 20vmin;
+  margin: 1em;  
+  
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+
+  float: right;
+  shape-outside: circle(50%);
+
+  box-shadow: 1px 2px hsla(0, 0%, 0%, 0.3);
+}
+
+/*************************************** runicfreak ***************************/
+
+.rf {
+  margin: auto;
+
+  max-width: 75ch;
+}
+
+#rflogo {
+  width: 10vmin;
+  margin: 1em;  
+  
+  border-radius: 20px;
+  background-position: center;
+
+  float: left;
+  shape-outside: circle(50%);
+
+  box-shadow: 1px 2px hsla(0, 0%, 0%, 0.3);
+}
+
+blockquote {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 3em;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 3em;
+  float: right;
+}
+
 /* gallery */
 
 section > .gallery img {
   box-shadow: 6px 4px hsla(0deg, 0%, 0%, 0.15);
 }
 
-/* footer */
+/************************************* footer *********************************/
 
 footer {
 
@@ -248,14 +353,20 @@ span {
   grid-column: 1 / -1;
 }
 
+#facebook, #twitter, #twitch {
+  border-radius: 0;
+}
 
 #facebook {
-  width: 4.5vmin;
+  width: 4vmin;
 }
 
 #twitter{
   width: 7vmin;
-  grid-template: 2 / 3;
+}
+
+#twitch {
+  width: 6vmin;
 }
 
 h6 {
@@ -268,3 +379,5 @@ h6 {
 
   grid-column: span 2;
 }
+
+/******************************* media querries *******************************/
