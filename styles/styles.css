@@ -469,13 +469,12 @@ h6 {
 }
 
 @media all and (max-width: 550px) {
-  .gallery > img {
-    width: 75vw;
-    margin-top: 1em
+  .floatpic1 {
+    width: 30vmin;
   }
-
-  footer {
-    grid-template-rows: 6vh 3vh;
+  
+  .floatpic2 {
+    width: 30vmin;
   }
 
   #rflogo {
@@ -488,6 +487,15 @@ h6 {
 
   blockquote {
     font-size: 1em;
+  }
+  
+  .gallery > img {
+    width: 75vw;
+    margin-top: 1em
+  }
+  
+  footer {
+    grid-template-rows: 6vh 3vh;
   }
 }
 /******************************************************************************//***************************************** mobile *****************************/
