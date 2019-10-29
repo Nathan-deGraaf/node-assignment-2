@@ -1,0 +1,19 @@
+{
+  "name": "fp-rework",
+  "version": "1.0.0",
+  "description": "node-Assignment02",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathan-deGraaf/final-project.git"
+  },
+  "author": "Nathan deGraaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nathan-deGraaf/final-project/issues"
+  },
+  "homepage": "https://github.com/Nathan-deGraaf/final-project#readme"
+}
