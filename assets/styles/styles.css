@@ -357,7 +357,7 @@ section > .gallery img {
 /******************************************************************************/
 
 footer {
-  background-color: #1e1e1f;
+  background-color: #3f3f3f;
   color: white;
   
   display: grid;
@@ -373,6 +373,7 @@ span {
 
 #facebook, #twitter, #twitch {
   border-radius: 0;
+  border: none;
 }
 
 #facebook {
