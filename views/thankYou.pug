@@ -1,9 +1,8 @@
 
-extends message
+extends head
 
 block content
-
-  .message
+  .head
     h1 Sent!
-    p Thank you, #{name}. We will contact you with --> #{email}.
+    p Thank you, #{name}. We will contact you at: #{email}.
     a(href='/') Return to the Homepage

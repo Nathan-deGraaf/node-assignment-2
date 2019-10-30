@@ -575,3 +575,14 @@ h6 {
     grid-template-rows: 4vh 3vh;
   }
 }
+
+.head {
+  text-align: center;
+
+  font-size: 2rem;
+  height: 80vh;
+}
+
+.return {
+  
+}
