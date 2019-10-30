@@ -4,14 +4,14 @@ html(lang='en')
 		meta(charset='UTF-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
-		title Gallery
 		link(rel='stylesheet', href='assets/styles/reset.css')
 		link(rel='stylesheet', href='assets/styles/fonts.css')
 		link(rel='stylesheet', href='assets/styles/styles.css')
+		title Nathan deGraaf
 	body
 		header
 			h1 Nathan deGraaf
-		nav
+	  nav
 			ul
 				li
 					img#logo(src='assets/pics/rf-logo-white.jpg', alt='')
@@ -23,30 +23,29 @@ html(lang='en')
 					a(href='runicfreak.html') RunicFreak
 				li
 					a(href='gallery.html') Gallery
-		main
-			section.flex
-				.gallery
-					img(src='assets/pics/hair.jpg', alt='')
-				.gallery
-					img(src='assets/pics/mc-1.jpg', alt='')
-				.gallery
-					img(src='assets/pics/mouf.jpg', alt='')
-				.gallery
-					img(src='assets/pics/paintball.jpg', alt='')
-				.gallery
-					img(src='assets/pics/mc-2.jpg', alt='')
-				.gallery
-					img(src='assets/pics/sax-man.jpg', alt='')
-				.gallery
-					img(src='assets/pics/photo-2.jpg', alt='')
-				.gallery
-					img(src='assets/pics/fish.jpg', alt='')
-				.gallery
-					img(src='assets/pics/grad-1.jpg', alt='')
-				.gallery
-					img(src='assets/pics/stance.jpg', alt='')
-		footer
-			span
+    block content
+    footer
+    div 
+      form(action='/submit-form', method='POST', enctype='application/x-www-form-urlencoded')
+
+      fieldset
+      
+      legend Please fill out all
+        em required
+        | fields
+      
+      div
+        label(for='name') Name:          
+        input#name(type='text', name='name', required)   
+        
+        label(for='email') Email:
+        input#mail(type='email', name='email', required)         
+                
+        label(for='text') questions?:
+        textarea#text(name='message', cols='30', rows='8', placeholder='What would you like to ask?', required)       
+      
+        input#button(type='submit')
+    span
 				a(href='https://www.facebook.com/nathan.degraaf.12')
 					img#facebook(src='assets/pics/facebook.svg', alt='a link to facebook')
 				a(href='https://twitter.com/The_Real_Fludd')
