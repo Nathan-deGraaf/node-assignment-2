@@ -4,45 +4,25 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    link(rel='stylesheet', href='assets/styles/reset.css')
-    link(rel='stylesheet', href='assets/styles/fonts.css')
-    link(rel='stylesheet', href='assets/styles/styles.css')
+    link(rel='stylesheet', href='/styles/reset.css')
+    link(rel='stylesheet', href='/styles/fonts.css')
+    link(rel='stylesheet', href='/styles/styles.css')
     title Nathan deGraaf
   body
     header
       h1 Nathan deGraaf
     nav
       ul
-        li: img#logo(src='assets/pics/rf-logo-white.jpg', alt='')
-        li: a(href='index.html') Home
-        li: a(href='about.html') About
-        li: a(href='runicfreak.html') RunicFreak
-        li: a(href='gallery.html') Gallery
+          -for(let item of Object.keys(nav))
+            -let url = nav[item].href
+            li: a(href='/' + url) #{nav[item].title}
     block content
     footer
-    div 
-      form(action='/submit-form', method='POST', enctype='application/x-www-form-urlencoded')
-      fieldset     
-      legend Please fill out all
-        em required
-        | fields
-      
-      div
-        label(for='name') Name:          
-        input#name(type='text', name='name', required)   
-        
-        label(for='email') Email:
-        input#mail(type='email', name='email', required)         
-                
-        label(for='text') questions?:
-        textarea#text(name='message', cols='30', rows='8', placeholder='What would you like to ask?', required)       
-      
-        input#button(type='submit')
       span
         a(href='https://www.facebook.com/nathan.degraaf.12')
-          img#facebook(src='assets/pics/facebook.svg', alt='a link to facebook')
+          img#facebook(src='/pics/facebook.svg', alt='a link to facebook')
         a(href='https://twitter.com/The_Real_Fludd')
-          img#twitter(src='assets/pics/twitter.svg', alt='a link to twitter')
+          img#twitter(src='/pics/twitter.svg', alt='a link to twitter')
         a(href='https://www.twitch.tv/runicfreak')
-          img#twitch(src='assets/pics/twitch-brands.svg', alt='a link to twitch')
+          img#twitch(src='/pics/twitch-brands.svg', alt='a link to twitch')
       h6 © 2019 Nathan deGraaf

@@ -12,10 +12,13 @@ const pageInfo = {
     title: 'RunicFreak'
   },
   gallery: {
-    href: 'galery',
+    href: 'gallery',
     title: 'Gallery',
   },
-
+  contact: {
+    href: 'form',
+    title: 'Contact'
+  }
 }
 
 module.exports = pageInfo

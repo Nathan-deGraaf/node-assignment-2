@@ -171,8 +171,9 @@ section.centered {
   grid-template: .2fr 1fr / 1fr;
 }
 
-div .grid {
+div.grid {
   justify-self: center;
+  align-self: center;
 
 }
 
@@ -419,7 +420,7 @@ h6 {
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 855px) {
   nav a{
     padding: .3rem 2rem .3rem 2rem;
     margin: .1em;
@@ -497,7 +498,7 @@ h6 {
 /******************************************************************************//***************************************** mobile *****************************/
 /******************************************************************************/
 
-@media all and (max-width: 475px) {
+@media all and (max-width: 550px) {
   nav ul {
     flex-direction: column;
 
@@ -576,6 +577,9 @@ h6 {
   }
 }
 
+/******************************************************************************//***********************added for node assignment *****************************/
+/******************************************************************************/
+
 .head {
   text-align: center;
 
@@ -584,5 +588,9 @@ h6 {
 }
 
 .return {
-  
+  font-size: 1.5rem;
+  background-color: #1e1e1f;
+  color: aliceblue;
+  padding: 1.2rem;
+  border-radius: 50px;
 }

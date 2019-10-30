@@ -1,32 +1,10 @@
-doctype html
-html(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		meta(http-equiv='X-UA-Compatible', content='ie=edge')
-		title RunicFreak
-		link(rel='stylesheet', href='assets/styles/reset.css')
-		link(rel='stylesheet', href='assets/styles/fonts.css')
-		link(rel='stylesheet', href='assets/styles/styles.css')
-	body
-		header
-			h1 Nathan deGraaf
-		nav
-			ul
-				li
-					img#logo(src='assets/pics/rf-logo-white.jpg', alt='')
-				li
-					a(href='index.html') Home
-				li
-					a(href='about.html') About
-				li
-					a(href='runicfreak.html') RunicFreak
-				li
-					a(href='gallery.html') Gallery
+extends layout
+
+block content
 		h2 Who Is RunicFreak?
 		main.rf
 			article
-				img#rflogo(src='assets/pics/rf-logo-white.jpg', alt='runicfreak logo white')
+				img#rflogo(src='/pics/rf-logo-white.jpg', alt='runicfreak logo white')
 			p
 				| RunicFreak is my online handle, specifically for gaming, and entertainment purposes. I have been streaming on twitch for 4 years now, mainly just having fun playing games. Some people don’t understand the purpose of streaming, and to what end it has a use. However, I use it as an escape from boredom. Because I don’t have a lot of people to play games with online, having a live audience while I'm playing make it more fun. Having an audience while its live creates a more competitive gaming experience as well, due to instant feedback from your actions.
 			br
@@ -35,13 +13,3 @@ html(lang='en')
 			br
 			p
 				| Although streaming has been a fruitless effort, I had the ability to raise $1000 for the Sheldon Kennedy Advocacy Center through the twitch platform, as well as grow a (small) following that regularly watch. Due to the constant talking during a stream it has also helped with my public speaking skills and increase my sense of creativity. Due to creating thumbnails and looking into the often overlooked to find a joke. Because of these small facts, I don’t think I'll be stopping my streams anytime soon. And I hope I never want to in the future. Stay freaky.
-			p
-		footer
-			span
-				a(href='https://www.facebook.com/nathan.degraaf.12')
-					img#facebook(src='assets/pics/facebook.svg', alt='a link to facebook')
-				a(href='https://twitter.com/The_Real_Fludd')
-					img#twitter(src='assets/pics/twitter.svg', alt='a link to twitter')
-				a(href='https://www.twitch.tv/runicfreak')
-					img#twitch(src='assets/pics/twitch-brands.svg', alt='a link to twitch')
-			h6 © 2019 Nathan deGraaf

@@ -1,54 +1,22 @@
-doctype html
-html(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		meta(http-equiv='X-UA-Compatible', content='ie=edge')
-		title About
-		link(rel='stylesheet', href='/styles/reset.css')
-		link(rel='stylesheet', href='/styles/fonts.css')
-		link(rel='stylesheet', href='/styles/styles.css')
-	body
-		header
-			h1 Nathan deGraaf
-		nav
-			ul
-				li
-					img#logo(src='assets/pics/rf-logo-white.jpg', alt='')
-				li
-					a(href='index.html') Home
-				li
-					a(href='about.html') About
-				li
-					a(href='runicfreak.html') RunicFreak
-				li
-					a(href='gallery.html') Gallery
-		h2 About Me
+extends layout
+
+block content
 		main.about
 			section#abt1
 				h3 Summary
 				article
-					img.floatpic1(src='assets/pics/baby.jpg', alt='nathan when he was a kid at the museum')
+					img.floatpic1(src='/pics/baby.jpg', alt='nathan when he was a kid at the museum')
 				p
 					| I was born in Lloydminster, SK in 1999.  My family didn’t have a lot of money when I was growing up, eating dinners of shake-and-bake chicken and Lipton noodles. School was never my forte, and most would describe me as a problem child. I was never interested in academics and gravitated towards artistic courses. Like the music programs (especially Jazz) the performing arts and community work. I moved from Lloydminster and complete my education in Airdrie, AB.
 			section#abt2
 				h3 High School
 				article
-					img.floatpic2(src='assets/pics/hschild.jpg', alt='self photo of nathan')
+					img.floatpic2(src='/pics/hschild.jpg', alt='self photo of nathan')
 				p
 					| After beginning in the concert music program in elementary, I instantly fell in love with music. By the time I was in 10th grade, I rose to be the lead soloist in the Jazz Band and did gigs at almost all community events playing alto saxophone.  aside from working in the Jazz band, I also did charity work with the Sheldon Kennedy Advocacy Center in Calgary. Including doing a charity livestream where I helped raise $1,000.00 for their cause. Despite hating academics, I graduated high school in 2017 with a lot under my belt, being a lead in band, and having taken my German B2, meaning I'm (technically) fluent in the German language. And a following on both YouTube and Twitch.
 			section#abt3
 				h3 After Highschool
 				article
-					img.floatpic1(src='assets/pics/yadult.jpg', alt='nathan kneeling on rocks')
+					img.floatpic1(src='/pics/yadult.jpg', alt='nathan kneeling on rocks')
 				p
 					| Shortly after graduating, I moved away from Airdrie with my girlfriend to a small town in Ontario called Fort Frances, directly on the Rainy River, and 3 hours west of Thunder Bay. During my time there I worked full time as a receiving supervisor and later became an assistant store manager for a Warehouse One clothing store. Because there was little to do in the town, I turned to computers to keep myself entertained, taking a small Udemy course in programming basics and front-end development.  doing these courses only scratched the surface and grabbed my curiosity, after 3 months of self-learning, I decided that it was what I wanted as my career. Fast forward 6 months later, and I'm now a student at SAIT polytechnic in Calgary, AB for a Web Developer course, never looking back.
-		footer
-			span
-				a(href='https://www.facebook.com/nathan.degraaf.12')
-					img#facebook(src='assets/pics/facebook.svg', alt='a link to facebook')
-				a(href='https://twitter.com/The_Real_Fludd')
-					img#twitter(src='assets/pics/twitter.svg', alt='a link to twitter')
-				a(href='https://www.twitch.tv/runicfreak')
-					img#twitch(src='assets/pics/twitch-brands.svg', alt='a link to twitch')
-			h6 © 2019 Nathan deGraaf

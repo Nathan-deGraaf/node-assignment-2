@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const pageInfo = require('./pageInfo');
+const inquiries = require('./inquiries')
 
 const app = express();
 
@@ -8,9 +9,9 @@ app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname + '/assets')));
 
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
 
-app.use(express.json());
+app.use(inquiries);
 
 
 app.get('/', (req, res) => {
@@ -27,7 +28,7 @@ app.get('/:page', (req, res) => {
 });
 
 
-app.post('/submit-form', (req, res) => {
+app.post('/form', (req, res) => {
   res.render('thankYou', {
     name: req.body.name,
     email: req.body.email
