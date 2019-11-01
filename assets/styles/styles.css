@@ -358,7 +358,7 @@ section > .gallery img {
 /******************************************************************************/
 
 footer {
-  background-color: #3f3f3f;
+  background-color: #5e5e5e;
   color: white;
   
   display: grid;
@@ -577,6 +577,8 @@ h6 {
   }
 }
 
+
+
 /******************************************************************************//***********************added for node assignment *****************************/
 /******************************************************************************/
 
@@ -593,4 +595,9 @@ h6 {
   color: aliceblue;
   padding: 1.2rem;
   border-radius: 50px;
+}
+
+.noBG{
+  background-color: transparent;
+  color: #1e1e1f;
 }
